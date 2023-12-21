@@ -1,0 +1,120 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                    Text                                    */
+/* -------------------------------------------------------------------------- */
+
+.text-smallcaps {
+  font-variant: small-caps;
+}
+.text-superscript {
+  vertical-align: super;
+}
+.text-word-break {
+  word-break: break-word;
+}
+
+
+/*-----------------------------------------------
+|   Font family
+-----------------------------------------------*/
+// .text-serif { font-family: $font-family-serif; }
+.font-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+.font-base {
+  font-family: $font-family-base;
+}
+.font-cursive{
+  font-family: $font-family-cursive;
+}
+.font-nunito{
+  font-family: $font-family-nunito;
+}
+
+/*-----------------------------------------------
+|   Error Page
+-----------------------------------------------*/
+.fs-error {
+  font-size: 7rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 10rem;
+  }
+}
+
+/*-----------------------------------------------
+|   Text alignment
+-----------------------------------------------*/
+.text-justify{
+  text-align: justify !important;
+}
+
+//shape
+
+.text-gradient{
+  // font-size: 16px;
+  background: linear-gradient(50deg, rgba(251,60,0,1),rgba(255,184,0,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-big-shoulders{
+  font-family: 'Big Shoulders Display', cursive;
+}
+.hero-title {
+  .title-100{
+    background: url('../img/text-bg.png') no-repeat, linear-gradient(117.9deg, #1BADFF 9.45%, #25E4CD 93.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(md){
+      line-height: 288px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 257px;
+      line-height: 223px;
+
+    }
+    @include media-breakpoint-up(xl){
+      font-size: 325px;
+      line-height: 288px;
+    }
+  }
+  .title-text{
+
+    @include media-breakpoint-up(lg){
+      font-size: 100px;
+    }
+    @include media-breakpoint-up(xl){
+      line-height: 1;
+    //font-size: clamp(80px, 12vw, 140px);
+      font-size: 139px;
+    }
+  }
+  .title-text-2{
+    @include media-breakpoint-up(lg){
+      font-size: 101px;
+    }
+    @include media-breakpoint-up(xl){
+      font-size: 140px;
+    }
+  }
+}
+.sub-title{
+  @include media-breakpoint-up(xs){
+    font-size: 21px;
+  }
+  @include media-breakpoint-up(sm){
+    font-size: 27px;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 35px;
+  }
+  @include media-breakpoint-up(lg){
+    
+    font-size: 43.2px;
+
+  }
+  @include media-breakpoint-up(xl){
+    font-size: 57.6px;
+  }
+
+}
